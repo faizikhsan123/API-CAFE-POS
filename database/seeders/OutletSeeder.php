@@ -1,0 +1,18 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Outlet;
+use Illuminate\Database\Seeder;
+
+class OutletSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        // buat 10 outlet
+        Outlet::factory(10)->create();
+    }
+}
